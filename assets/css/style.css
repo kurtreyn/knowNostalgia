@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.custom-nav {
+  background-color: #f72585;
+}
+
+.custom-footer {
+  background-color: #f72585;
+}
+
+.nav-logo {
+  width: 4rem;
+}
+/*# sourceMappingURL=style.css.map */

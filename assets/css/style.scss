@@ -1,1 +1,18 @@
+$primaryColor: #f72585;
+$colorTwo: #b5179e;
+$colorThree: #7209b7;
+$colorFour: #4361ee;
+$colorFive: #4895ef;
+$colorSix: #4cc9f0;
 
+.custom-nav {
+  background-color: $primaryColor;
+}
+
+.custom-footer {
+  background-color: $primaryColor;
+}
+
+.nav-logo {
+  width: 4rem;
+}
