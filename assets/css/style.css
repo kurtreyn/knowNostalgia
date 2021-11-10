@@ -2,11 +2,34 @@
   background-color: #f72585;
 }
 
+.nav-logo {
+  width: 4rem;
+}
+
+.custom-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-fun-fact {
+  background-color: #4895ef;
+}
+
 .custom-footer {
   background-color: #f72585;
 }
 
-.nav-logo {
+.footer-logo {
+  width: 8rem;
+  padding: 0.5rem;
+}
+
+.copyright {
+  padding: 1.5rem;
+}
+
+.social-icon {
   width: 4rem;
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

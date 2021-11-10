@@ -9,6 +9,7 @@
       content="know nostalgia portfolio project nucamp kurt reynolds"
     />
     <meta name="author" content="Kurt Reynolds" />
+
     <!-- Favicon -->
     <link rel="icon" href="#" type="image/x-icon" />
 
@@ -32,6 +33,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
@@ -52,16 +54,17 @@
     />
     <!-- Local CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Know(Nostalgia)</title>
   </head>
+
   <body>
     <!-- HERO CONTAINER -->
-
     <header>
       <div class="container-fluid">
         <div class="row hero-row">
           <img
-            src="assets/images/hero-img.jpg"
+            src="./assets/images/hero-img.jpg"
             class="img-fluid"
             alt="hero image"
           />
@@ -70,24 +73,24 @@
     </header>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light custom-nav sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
       <a class="navbar-brand" href="#">
-        <img src="./assets/images/sunglasses.svg" alt="logo" class="nav-logo" />
-      </a>
+        <img src="./assets/images/sunglasses.svg" alt="logo" class="nav-logo"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
@@ -96,8 +99,24 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Select Interest
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Movies</a>
+              <a class="dropdown-item" href="#">Music</a>
+              <a class="dropdown-item" href="#">TV Shows</a>
+              <a class="dropdown-item" href="#">Video Games</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -108,24 +127,54 @@
       <!-- FIRST ROW -->
       <div class="row custom-row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/thirdEyeBlind-semiCharmedLife.jpg"
+              alt="album cover"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">first card</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/heathLedgerJoker.png"
+              alt="heath ledger joker"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">second card</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/that70sShow.jpg"
+              alt="that 70's show"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">third card</p>
             </div>
@@ -137,24 +186,54 @@
       <!-- SECOND ROW -->
       <div class="row custom-row">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/goldenEyeN64.jpg"
+              alt="goldeneye nintendo"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">fourth card</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/woodstock99.jpg"
+              alt="woodstock 99"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">fifth card</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-          <div class="card bg-dark custom-card">
-            <img src="https://placekitten.com/g/200/300" alt="####" />
+          <div class="card bg-dark h-100 custom-card">
+            <img
+              src="./assets/images/napster.png"
+              alt="napster"
+              class="custom-card-img"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block btn-fun-fact"
+            >
+              Fun Fact
+            </button>
             <div class="card-img-overlay">
               <p class="card-text text-white">sixth card</p>
             </div>
@@ -167,7 +246,48 @@
 
     <footer class="site-footer custom-footer">
       <div class="container-fluid footer-container">
-        <div class="row">footer</div>
+        <div class="row">
+          <div class="col-4 col-sm-4 text-center">
+            <a href="http://facebook.com/">
+              <img
+                src="./assets/images/icon-facebook.svg"
+                alt="facebook icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://twitter.com/">
+              <img
+                src="./assets/images/icon-twitter.svg"
+                alt="twitter icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://youtube.com/">
+              <img
+                src="./assets/images/icon-youtube.svg"
+                alt="youtube icon"
+                class="social-icon"
+              />
+            </a>
+            <a href="http://instagram.com/">
+              <img
+                src="./assets/images/icon-instagram.svg"
+                alt="instagram icon"
+                class="social-icon"
+              />
+            </a>
+          </div>
+          <div class="col-4 col-sm-4 text-center">
+            <p class="copyright">&copy; Kurt Reynolds, 2021</p>
+          </div>
+          <div class="col-4 col-sm-4 text-center">
+            <img
+              src="./assets/images/sunglasses.svg"
+              alt="logo"
+              class="footer-logo"
+            />
+          </div>
+        </div>
       </div>
     </footer>
 

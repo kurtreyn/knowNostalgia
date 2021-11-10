@@ -8,11 +8,32 @@ $colorSix: #4cc9f0;
 .custom-nav {
   background-color: $primaryColor;
 }
+.nav-logo {
+  width: 4rem;
+}
+
+.custom-row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-fun-fact {
+  background-color: $colorFive;
+}
 
 .custom-footer {
   background-color: $primaryColor;
 }
+.footer-logo {
+  width: 8rem;
+  padding: 0.5rem;
+}
 
-.nav-logo {
+.copyright {
+  padding: 1.5rem;
+}
+
+.social-icon {
   width: 4rem;
+  padding: 0.5rem;
 }
