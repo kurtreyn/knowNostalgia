@@ -48,3 +48,31 @@ $colorSix: #4cc9f0;
   margin-top: 0.3rem;
   padding: 0.5rem;
 }
+
+.hide-item {
+  display: none;
+}
+
+.fact-container {
+  position: absolute;
+  width: 18rem;
+  height: 12rem;
+  background-color: $colorSix;
+  opacity: 0.9;
+}
+
+.fact-info {
+  color: #000;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.fact-container .closeBtn {
+  font-size: 2rem;
+  color: $primaryColor;
+}
+
+.close-button {
+  color: $colorTwo;
+  font-size: 2rem;
+}
