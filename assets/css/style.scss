@@ -2,12 +2,22 @@ $primaryColor: #f72585;
 $colorTwo: #b5179e;
 $colorThree: #7209b7;
 $colorFour: #4361ee;
-$colorFive: #4895ef;
+$funFactBtn: #4895ef;
 $colorSix: #4cc9f0;
 
 .custom-nav {
   background-color: $primaryColor;
 }
+
+.hero-column {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-header {
+  margin-bottom: 0;
+}
+
 .nav-logo {
   width: 4rem;
 }
@@ -18,7 +28,7 @@ $colorSix: #4cc9f0;
 }
 
 .btn-fun-fact {
-  background-color: $colorFive;
+  background-color: $funFactBtn;
 }
 
 .custom-footer {
@@ -35,5 +45,6 @@ $colorSix: #4cc9f0;
 
 .social-icon {
   width: 4rem;
+  margin-top: 0.3rem;
   padding: 0.5rem;
 }

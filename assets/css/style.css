@@ -2,6 +2,15 @@
   background-color: #f72585;
 }
 
+.hero-column {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-header {
+  margin-bottom: 0;
+}
+
 .nav-logo {
   width: 4rem;
 }
@@ -30,6 +39,7 @@
 
 .social-icon {
   width: 4rem;
+  margin-top: 0.3rem;
   padding: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
