@@ -1,48 +1,48 @@
 'use strict';
-//good from here...
-const displayBtns = document.querySelectorAll('[data-fact]');
+const factBtns = document.querySelectorAll('[data-fact]');
+const containers = document.querySelectorAll('.fact-container');
+const closeBtn = document.querySelector('.closeBtn');
+let currentBtn = '';
+let resultBtn;
+let currentCont = '';
 
-const closeBtn = document.querySelector('.close-button');
+//************************ NEW CODE START
 
-const factContainer = document.querySelector('.fact-container');
+//************************ NEW CODE END
 
-let factInfo = document.querySelector('.fact-info');
-
-let attrib = '';
-
-const facts = {
-  semiCharmed: `This song describes a drug user's descent into crystal meth addiction.`,
-  napster: `Shawn Fanning, the creator of Napster, got the idea while he was enrolled at Northeastern University in 1998`,
-  woodstock99: `During the final hours of the "Woodstock 99," a peace promotion organization handed out candles to the audience to create a candlelight vigil for the final hours of the festival. The audience used the candles to set fire to an audio tower and start bonfires.`,
-};
-//...to here
-
-const showFact = function () {
-  factContainer.classList.remove('hide-item');
-  attrib = this.getAttribute('data-fact');
-  if (attrib === 'napster') {
-    factInfo.innerText = facts.napster;
-  } else if (attrib === 'semi-charmed') {
-    factInfo.innerText = facts.semiCharmed;
-  } else if (attrib === 'woodstock99') {
-    factInfo.innerText = facts.woodstock99;
+const setup = function () {
+  if (resultBtn) {
+    currentBtn = this.getAttribute('data-fact');
+    resultBtn = '';
   } else {
-    factInfo.innerText = '';
+    currentBtn += this.getAttribute('data-fact');
   }
+
+  for (let i = 0; i < containers.length; i++) {
+    currentCont = containers[i].getAttribute('id');
+    if (currentCont === currentBtn) {
+      containers[i].classList.remove('hide-item');
+    } else {
+      containers[i].classList.add('hide-item');
+    }
+  }
+  currentBtn = '';
+  currentCont = '';
+  // const hide = function () {
+  //   containers[i].classList.add('hide-item');
+  //   console.log('click');
+  // };
+  // closeBtn.onclick = hide;
 };
 
-//good from here...
-for (const btn of displayBtns) {
-  btn.onclick = showFact;
+// for (const x of containers) {
+//   closeBtn.addEventListener('click, hide');
+// }
+
+for (const btn of factBtns) {
+  btn.addEventListener('click', setup);
 }
 
-function hideFact() {
-  factContainer.classList.add('hide-item');
-}
+//************************ NEW CODE START
 
-closeBtn.addEventListener('click', hideFact);
-//...to here
-
-let factText = document.createElement('P');
-factText.innerText = 'fact text';
-document.getElementById('woodstock99').appendChild(factText);
+//************************ NEW CODE END
