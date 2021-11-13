@@ -19,6 +19,7 @@ const setup = function () {
     currentCont = containers[i].getAttribute('id');
     if (currentCont === currentBtn) {
       containers[i].classList.remove('hide-item');
+      containers[i].classList.add('fade-in');
     } else {
       containers[i].classList.add('hide-item');
     }

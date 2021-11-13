@@ -82,3 +82,18 @@ $colorSix: #4cc9f0;
   color: $colorTwo;
   font-size: 2rem;
 }
+
+.fade-in {
+  animation-name: FadeIn;
+  animation-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
