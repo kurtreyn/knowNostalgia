@@ -1,14 +1,11 @@
 'use strict';
 const factBtns = document.querySelectorAll('[data-fact]');
 const containers = document.querySelectorAll('.fact-container');
-const closeBtn = document.querySelector('.closeBtn');
+const closeBtn = document.querySelectorAll('.close-button');
 let currentBtn = '';
 let resultBtn;
 let currentCont = '';
-
-//************************ NEW CODE START
-
-//************************ NEW CODE END
+let thisLocation = '';
 
 const setup = function () {
   if (resultBtn) {
@@ -25,24 +22,18 @@ const setup = function () {
     } else {
       containers[i].classList.add('hide-item');
     }
+    const hideContainer = function () {
+      containers[i].classList.add('hide-item');
+    };
+    for (const cb of closeBtn) {
+      cb.addEventListener('click', hideContainer);
+    }
   }
+
   currentBtn = '';
   currentCont = '';
-  // const hide = function () {
-  //   containers[i].classList.add('hide-item');
-  //   console.log('click');
-  // };
-  // closeBtn.onclick = hide;
 };
-
-// for (const x of containers) {
-//   closeBtn.addEventListener('click, hide');
-// }
 
 for (const btn of factBtns) {
   btn.addEventListener('click', setup);
 }
-
-//************************ NEW CODE START
-
-//************************ NEW CODE END

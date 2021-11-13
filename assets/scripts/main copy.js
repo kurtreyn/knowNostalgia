@@ -1,12 +1,4 @@
 'use strict';
-//good from here...
-const displayBtns = document.querySelectorAll('[data-fact]');
-
-const closeBtn = document.querySelector('.close-button');
-
-const factContainer = document.querySelector('.fact-container');
-
-let factInfo = document.querySelector('.fact-info');
 
 let attrib = '';
 
@@ -40,27 +32,16 @@ const showFact = function () {
   }
 };
 
-//good from here...
-for (const btn of displayBtns) {
-  btn.onclick = showFact;
-}
-
-function hideFact() {
-  factContainer.classList.add('hide-item');
-}
-
-closeBtn.addEventListener('click', hideFact);
-//...to here
-
-/* THIS CODE WORKS (except for close button)
+/* THIS CODE WORKS 
 ********************************************
 'use strict';
 const factBtns = document.querySelectorAll('[data-fact]');
 const containers = document.querySelectorAll('.fact-container');
-const closeBtn = document.querySelectorAll('.closeBtn');
+const closeBtn = document.querySelectorAll('.close-button');
 let currentBtn = '';
 let resultBtn;
 let currentCont = '';
+let thisLocation = '';
 
 const setup = function () {
   if (resultBtn) {
@@ -72,18 +53,21 @@ const setup = function () {
 
   for (let i = 0; i < containers.length; i++) {
     currentCont = containers[i].getAttribute('id');
-    console.log(currentCont);
     if (currentCont === currentBtn) {
       containers[i].classList.remove('hide-item');
     } else {
       containers[i].classList.add('hide-item');
     }
+    const hideContainer = function () {
+      containers[i].classList.add('hide-item');
+    };
+    for (const cb of closeBtn) {
+      cb.addEventListener('click', hideContainer);
+    }
   }
+
   currentBtn = '';
-  const hide = function () {
-    containers[i].classList.add('hide-item');
-  };
-  closeBtn.onclick = hide;
+  currentCont = '';
 };
 
 for (const btn of factBtns) {
