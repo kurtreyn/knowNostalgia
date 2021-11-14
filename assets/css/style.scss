@@ -5,12 +5,20 @@ $colorFour: #4361ee;
 $funFactBtn: #4895ef;
 $colorSix: #4cc9f0;
 
+.jumbotron {
+  margin-bottom: 0px;
+}
+
 .custom-nav {
   background-color: $primaryColor;
 }
 
 .hero-column {
   margin: 0;
+  padding: 0;
+}
+
+.hero-container {
   padding: 0;
 }
 
@@ -96,4 +104,8 @@ $colorSix: #4cc9f0;
   100% {
     opacity: 0.9;
   }
+}
+
+.img-col img {
+  max-width: 100%;
 }

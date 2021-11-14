@@ -1,9 +1,17 @@
+.jumbotron {
+  margin-bottom: 0px;
+}
+
 .custom-nav {
   background-color: #f72585;
 }
 
 .hero-column {
   margin: 0;
+  padding: 0;
+}
+
+.hero-container {
   padding: 0;
 }
 
@@ -102,5 +110,9 @@
   100% {
     opacity: 0.9;
   }
+}
+
+.img-col img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
