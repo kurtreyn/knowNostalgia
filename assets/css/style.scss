@@ -109,3 +109,16 @@ $colorSix: #4cc9f0;
 .img-col img {
   max-width: 100%;
 }
+
+.movie-fact-container {
+  width: 24rem;
+  height: 14rem;
+  background-color: $colorFour;
+  color: #fff;
+}
+
+.movie-h2 {
+  background-color: $colorSix;
+  font-family: 'Road Rage', cursive;
+  font-size: 3rem;
+}

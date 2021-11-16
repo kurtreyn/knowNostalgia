@@ -34,7 +34,9 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
     </style>
+    <!-- build:../assets/css assets/css/style.css -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -52,22 +54,22 @@
     />
     <!-- Local CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-
+    <!-- endbuild -->
     <title>Know(Nostalgia)</title>
   </head>
 
   <body>
     <!-- HERO CONTAINER -->
     <header>
-      <div class="jumbotron-fluid">
-        <div class="container-fluid hero-container">
-          <img
-            src="../assets/images/hero-img-lg.jpg"
-            class="img-fluid"
-            alt="hero image"
-          />
-        </div>
-      </div>
+      <div class="container-fluid">
+        <div class="row hero-row">
+          <div class="col-12 hero-column">
+            <img
+              src="../assets/images/movies-banner.jpg"
+              class="img-fluid"
+              alt="hero image"
+            />
+          </div>
           <div class="col-12 d-flex justify-content-center logo-column">
             <img
               src="../assets/images/header-logo.png"
@@ -135,34 +137,84 @@
     <div class="container">
       <!-- FIRST ROW -->
       <div class="row custom-row">
-       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-         <img src="../assets/images/movies-anchorman.jpg" alt="anchorman">
-       </div>
-       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-        <h2>Info Column</h2>
-      </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
+          <img src="../assets/images/movies-anchorman.jpg" alt="Anchorman" />
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
+          <h2 class="movie-h2 badge-pill">Anchorman</h2>
+          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+            <div
+              class="movie-fact-container d-flex flex-column"
+              data-movie-container="anchorman"
+            >
+              movie fact container
+              <button
+                class="btn btn-primary mt-auto btn-fun-fact"
+                data-movie-fact-button="anchorman"
+              >
+                Find Out More
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- END FIRST ROW -->
+
       <!-- SECOND ROW -->
       <div class="row custom-row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-          <img src="../assets/images/movies-cloverfield.jpg" alt="cloverfield">
+          <img
+            src="../assets/images/movies-cloverfield.jpg"
+            alt="cloverfield"
+          />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Info Column</h2>
+          <h2 class="movie-h2 badge-pill">Cloverfield</h2>
+          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+            <div
+              class="movie-fact-container d-flex flex-column"
+              data-movie-container="cloverfield"
+            >
+              movie fact container
+              <button
+                class="btn btn-primary mt-auto btn-fun-fact"
+                data-movie-fact-button="cloverfield"
+              >
+                Find Out More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-           <!-- END SECOND ROW -->
-                <!-- THIRD ROW -->
+      <!-- END SECOND ROW -->
+
+      <!-- THIRD ROW -->
       <div class="row custom-row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
-          <img src="../assets/images/movies-donnie-darko.jpg" alt="donnie darko">
+          <img
+            src="../assets/images/movies-donnie-darko.jpg"
+            alt="donnie darko"
+          />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Info Column</h2>
+          <h2 class="movie-h2 badge-pill">Donnie Darko</h2>
+          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+            <div
+              class="movie-fact-container d-flex flex-column"
+              data-movie-container="donnie-darko"
+            >
+              movie fact container
+              <button
+                class="btn btn-primary mt-auto btn-fun-fact"
+                data-movie-fact-button="donnie-darko"
+              >
+                Find Out More
+              </button>
+            </div>
+          </div>
         </div>
-        </div>
-        <!-- END THIRD ROW -->
+      </div>
+      <!-- END THIRD ROW -->
     </div>
     <!-- END MAIN CONTAINER -->
 
@@ -209,14 +261,16 @@
               class="footer-logo"
             />
           </div>
+          <div></div>
         </div>
       </div>
     </footer>
-
+    <!-- build:../assets/scripts assets/scripts/main.js -->
     <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- LOCAL SCRIPT -->
     <script src="../assets/scripts/main.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

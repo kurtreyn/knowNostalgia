@@ -115,4 +115,17 @@
 .img-col img {
   max-width: 100%;
 }
+
+.movie-fact-container {
+  width: 24rem;
+  height: 14rem;
+  background-color: #4361ee;
+  color: #fff;
+}
+
+.movie-h2 {
+  background-color: #4cc9f0;
+  font-family: 'Road Rage', cursive;
+  font-size: 3rem;
+}
 /*# sourceMappingURL=style.css.map */

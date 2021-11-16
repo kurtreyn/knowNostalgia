@@ -1,9 +1,10 @@
 'use strict';
+
+//INDEX SCRIPT
 const factBtns = document.querySelectorAll('[data-fact]');
 const containers = document.querySelectorAll('.fact-container');
 const closeBtn = document.querySelectorAll('.close-button');
 let currentBtn = '';
-let resultBtn;
 let currentCont = '';
 let thisLocation = '';
 let para = document.createElement('p');
@@ -20,15 +21,12 @@ const facts = {
 };
 
 const setup = function () {
-  if (resultBtn) {
-    currentBtn = this.getAttribute('data-fact');
-    resultBtn = '';
-  } else {
-    currentBtn += this.getAttribute('data-fact');
-  }
+  currentBtn = this.getAttribute('data-fact');
+  console.log(this);
 
   for (let i = 0; i < containers.length; i++) {
     currentCont = containers[i].getAttribute('id');
+    console.log(`current cont is ${currentCont}`);
 
     if (currentCont === currentBtn) {
       attrib = currentCont;
@@ -73,4 +71,35 @@ const setup = function () {
 
 for (const btn of factBtns) {
   btn.addEventListener('click', setup);
+}
+
+//MOVIE-PAGE SCRIPT *************************
+const movieFactCont = document.querySelectorAll('[data-movie-container]');
+const movFctBtns = document.querySelectorAll('[data-movie-fact-button]');
+let curMFB = '';
+let curMovCont = '';
+
+const testClick = function () {
+  console.log(`test click`);
+};
+
+const movSetup = function () {
+  curMFB = this.getAttribute('data-movie-fact-button');
+  console.log(`current button is ${curMFB}`);
+
+  for (let m = 0; m < movieFactCont.length; m++) {
+    // console.log(movieFactCont[m]);
+    curMovCont = movieFactCont[m].getAttribute('data-movie-container');
+    // console.log(`current container is ${curMovCont}`);
+
+    if (curMovCont === curMFB) {
+      console.log(`it's a match`);
+      console.log(movieFactCont[m]);
+      movieFactCont[m].style.right = '-10px';
+    }
+  }
+};
+
+for (const mfb of movFctBtns) {
+  mfb.addEventListener('click', movSetup);
 }
