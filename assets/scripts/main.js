@@ -78,6 +78,13 @@ const movieFactCont = document.querySelectorAll('[data-movie-container]');
 const movFctBtns = document.querySelectorAll('[data-movie-fact-button]');
 let curMFB = '';
 let curMovCont = '';
+let attribMov = '';
+
+const movieFacts = {
+  anchorman: `The film was inspired by a biography show that Will Ferrell watched about Jessica Savitch, and how one of her male co-workers confessed to being a total chauvinist back in the day.`,
+  cloverfield: `During the first weekend of the release, many theaters posted signs warning guests that the hand-held camera movements may cause motion sickness.`,
+  donnieDarko: `This was Seth Rogen’s feature film debut.`,
+};
 
 const testClick = function () {
   console.log(`test click`);
@@ -95,7 +102,22 @@ const movSetup = function () {
     if (curMovCont === curMFB) {
       console.log(`it's a match`);
       console.log(movieFactCont[m]);
-      movieFactCont[m].style.right = '-10px';
+      attribMov = curMovCont;
+
+      switch (attribMov) {
+        case 'anchorman':
+          para.innerText = movieFacts.anchorman;
+          movieFactCont[m].appendChild(para);
+          break;
+        case 'cloverfield':
+          para.innerText = movieFacts.cloverfield;
+          movieFactCont[m].appendChild(para);
+        case 'donnie-darko':
+          para.innerText = movieFacts.donnieDarko;
+          movieFactCont[m].appendChild(para);
+        default:
+          '';
+      }
     }
   }
 };
