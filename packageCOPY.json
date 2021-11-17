@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server",
     "scss": "node-sass -o assets/css/ assets/css/",
     "watch:scss": "onchange 'assets/css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "start": "npm run watch:all",
-    "imagemin": "imagemin images/* -o dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin movies.html -d dist --htmlmin -o dist/movies.html && usemin music.html -d dist --htmlmin -o dist/music.html && usemin tvshows.html -d dist --htmlmin -o dist/tvshows.html && usemin videogames.html -d dist --htmlmin -o dist/videogames.html",
-    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

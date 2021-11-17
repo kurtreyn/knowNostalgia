@@ -34,8 +34,9 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
     </style>
-    <!-- build:../assets/css assets/css/style.css -->
+    <!-- build:css assets/css/style.css -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -143,9 +144,21 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>God of War</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">God of War</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-game-container="god-of-war"
+          >
+            Developed by Santa Monica Studio and published by Sony Computer
+            Entertainment. First released on March 22, 2005, for the PlayStation
+            2 console.
+
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-game-fact-button="god-of-war"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -160,9 +173,20 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Half-Life</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">Half-Life</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-game-container="half-life"
+          >
+            Developed by Valve and published by Sierra Studios for Windows in
+            1998. It was Valve's debut product and the first game in the
+            Half-Life series.
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-game-fact-button="half-life"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -177,9 +201,20 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Mario 64</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">Mario 64</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-game-container="mario"
+          >
+            A 1996 platform game for the Nintendo 64 and the first Super Mario
+            game to feature 3D gameplay. It was developed by Nintendo EAD and
+            published by Nintendo
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-game-fact-button="mario"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -234,7 +269,7 @@
         </div>
       </div>
     </footer>
-    <!-- build:../assets/scripts assets/scripts/main.js -->
+    <!-- build:js assets/scripts/main.js -->
     <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

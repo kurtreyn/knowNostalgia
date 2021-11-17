@@ -2,7 +2,7 @@
   margin-bottom: 0px; }
 
 .custom-nav {
-  background-color: #f72585; }
+  background-color: blue; }
 
 .hero-column {
   margin: 0;
@@ -24,12 +24,8 @@
 .btn-fun-fact {
   background-color: #4895ef; }
 
-.btn-fun-fact-page {
-  background-color: #4895ef;
-  width: 8rem; }
-
 .custom-footer {
-  background-color: #f72585; }
+  background-color: blue; }
 
 .footer-logo {
   width: 8rem;
@@ -65,7 +61,7 @@
 
 .fact-container .closeBtn {
   font-size: 2rem;
-  color: #f72585; }
+  color: blue; }
 
 .close-button {
   color: #b5179e;
@@ -85,9 +81,11 @@
 .img-col img {
   max-width: 100%; }
 
-.page-fact-container {
+.movie-fact-container {
   width: 24rem;
-  height: 14rem; }
+  height: 14rem;
+  background-color: #4361ee;
+  color: #fff; }
 
 .movie-h2 {
   background-color: #4cc9f0;

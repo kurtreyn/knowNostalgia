@@ -1,4 +1,5 @@
 $primaryColor: #f72585;
+// $primaryColor: blue;
 $colorTwo: #b5179e;
 $colorThree: #7209b7;
 $colorFour: #4361ee;
@@ -37,6 +38,11 @@ $colorSix: #4cc9f0;
 
 .btn-fun-fact {
   background-color: $funFactBtn;
+}
+
+.btn-fun-fact-page {
+  background-color: $funFactBtn;
+  width: 8rem;
 }
 
 .custom-footer {
@@ -110,11 +116,11 @@ $colorSix: #4cc9f0;
   max-width: 100%;
 }
 
-.movie-fact-container {
+.page-fact-container {
   width: 24rem;
   height: 14rem;
-  background-color: $colorFour;
-  color: #fff;
+  // background-color: $colorFour;
+  // color: #fff;
 }
 
 .movie-h2 {

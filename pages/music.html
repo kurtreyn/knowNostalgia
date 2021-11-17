@@ -34,8 +34,9 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
     </style>
-    <!-- build:../assets/css assets/css/style.css -->
+    <!-- build:css assets/css/style.css -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -143,9 +144,22 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Bittersweet Symphony</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">Bittersweet Symphony</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-music-container="bittersweet"
+          >
+            Recorded by English rock band the Verve as the lead track on their
+            third studio album, Urban Hymns (1997). The song was released on 16
+            June 1997 by Hut Recordings and Virgin Records as the first single
+            from the album, reaching number two on the UK Singles Chart and
+            remaining in the chart for three months.
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-music-fact-button="bittersweet"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -160,9 +174,23 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>Smells Like Teen Spirit</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">Smells Like Teen Spirit</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-music-container="spirit"
+          >
+            A song by American rock band Nirvana. It is the opening track and
+            lead single from the band's second album, Nevermind (1991), released
+            on DGC Records. The unexpected success of the song propelled
+            Nevermind to the top of several albums charts at the start of 1992,
+            an event often marked as the point when grunge entered the
+            mainstream.
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-music-fact-button="spirit"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -177,9 +205,20 @@
           />
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 info-col">
-          <h2>U Can't Touch This</h2>
-          <div class="col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5">
-            some text
+          <h2 class="movie-h2 badge-pill">U Can't Touch This</h2>
+          <div
+            class="page-fact-container d-flex flex-column"
+            data-music-container="hammer"
+          >
+            A song co-written, produced and performed by MC Hammer from his 1990
+            album Please Hammer, Don't Hurt 'Em. It is considered to be his
+            signature song.
+            <button
+              class="btn btn-primary mt-auto badge-pill btn-fun-fact-page"
+              data-music-fact-button="hammer"
+            >
+              Find Out More
+            </button>
           </div>
         </div>
       </div>
@@ -234,7 +273,7 @@
         </div>
       </div>
     </footer>
-    <!-- build:../assets/scripts assets/scripts/main.js -->
+    <!-- build:js assets/scripts/main.js -->
     <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
