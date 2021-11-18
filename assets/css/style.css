@@ -62,8 +62,6 @@
 
 .fact-container {
   position: absolute;
-  width: 18rem;
-  height: 14rem;
   background-color: #4cc9f0;
   opacity: 0.9;
 }
@@ -129,6 +127,5 @@
 .movie-h2 {
   background-color: #4cc9f0;
   font-family: 'Road Rage', cursive;
-  font-size: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

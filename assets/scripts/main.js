@@ -48,7 +48,7 @@ const setup = function () {
         para.innerText = facts.semiCharmed;
         containers[i].appendChild(para);
       } else if (attrib === 'dark-knight') {
-        para.innerText = facts.that70sShow;
+        para.innerText = facts.darkKnight;
         containers[i].appendChild(para);
       } else if (attrib === 'that-70s-show') {
         para.innerText = facts.that70sShow;
