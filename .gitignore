@@ -2,3 +2,5 @@
 node_modules
 portfolioProjectBootstrap.code-workspace
 bs.config.json
+packageCOPY.json
+gulpfile.js

@@ -6,22 +6,25 @@
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
+    "gulp": "npm run gulp",
+    "gulp-sass": "npm run gulp-sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.27.7",
     "copyfiles": "^2.2.0",
     "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.6.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1",
-    "sass": "^1.43.4",
-    "usemin-cli": "^0.6.0"
+    "lite-server": "^2.6.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
