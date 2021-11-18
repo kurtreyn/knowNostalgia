@@ -87,7 +87,6 @@ for (const btn of factBtns) {
 
 const factCont = document.querySelectorAll('[data-container]');
 const factPageBtns = document.querySelectorAll('[data-fact-button]');
-const overlayCol = document.querySelectorAll('.img-col');
 let curFB = '';
 let curCont = '';
 
@@ -104,65 +103,89 @@ const pageSetup = function () {
     curCont = factCont[y].getAttribute('data-container');
     // console.log(`current container is ${curCont}`);
 
+    let originalText = factCont[y].innerText;
+    let initBtnTxt = factPageBtns[y].innerText;
+
+    function delta() {
+      factCont[y].innerText = '';
+      factCont[y].classList.add('delta');
+      factPageBtns[y].innerText = 'close';
+      factCont[y].appendChild(para);
+    }
+
+    const unDelta = function () {
+      factCont[y].classList.remove('delta');
+      factCont[y].removeChild(para);
+      factCont[y].innerText = originalText;
+      factPageBtns[y].innerText = initBtnTxt;
+    };
+
     if (curCont === curFB) {
       console.log(`it's a match`);
       // console.log(factCont[y]);
 
       switch (curCont) {
         case 'anchorman':
-          factPageBtns[y].innerText = 'close';
           para.innerText = facts.anchorman;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'cloverfield':
           para.innerText = facts.cloverfield;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'donnie-darko':
           para.innerText = facts.donnieDarko;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'bittersweet':
           para.innerText = facts.bittersweetSymphony;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'spirit':
           para.innerText = facts.teenSpirit;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'hammer':
           para.innerText = facts.hammer;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'south-park':
           para.innerText = facts.southPark;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'sopranos':
           para.innerText = facts.sopranos;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'dexter':
           para.innerText = facts.dexter;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'god-of-war':
           para.innerText = facts.godOfWar;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'half-life':
           para.innerText = facts.halfLife;
-          factCont[y].appendChild(para);
+          delta();
           break;
         case 'mario':
           para.innerText = facts.mario64;
-          factCont[y].appendChild(para);
+          delta();
           break;
         default:
           '';
       }
+
+      if ((factPageBtns.innerText = 'close')) {
+        for (const fpb of factPageBtns) {
+          fpb.addEventListener('click', unDelta);
+        }
+      }
     }
   }
+  curCont = factCont;
+  curFB = factPageBtns;
 };
 
 for (const fb of factPageBtns) {
