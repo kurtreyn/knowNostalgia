@@ -60,6 +60,10 @@
   display: none;
 }
 
+.about-img img {
+  max-width: 100%;
+}
+
 .fact-container {
   position: absolute;
   background-color: #4cc9f0;
