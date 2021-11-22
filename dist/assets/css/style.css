@@ -12,6 +12,9 @@
 .custom-nav {
   background-color: #f72585;
 }
+.custom-nav a {
+  color: #4361ee;
+}
 
 .hero-column {
   margin: 0;
