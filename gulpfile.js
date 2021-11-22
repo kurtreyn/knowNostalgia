@@ -13,7 +13,7 @@ const cssBundle = () =>
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
     'assets/css/style.css',
   ])
-    .pipe(concat('styles.css'))
+    .pipe(concat('style.css'))
     .pipe(dest('dist/assets/css'));
 
 //bundle JavaScript
