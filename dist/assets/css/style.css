@@ -12,9 +12,6 @@
 .custom-nav {
   background-color: #f72585;
 }
-.custom-nav a {
-  color: #4361ee;
-}
 
 .hero-column {
   margin: 0;
@@ -103,9 +100,21 @@
 }
 
 .fade-in {
-  animation-name: FadeIn;
-  animation-duration: 500ms;
-  transition-timing-function: linear;
+  -webkit-animation-name: FadeIn;
+          animation-name: FadeIn;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 @keyframes FadeIn {
@@ -116,6 +125,7 @@
     opacity: 0.9;
   }
 }
+
 .img-col img {
   max-width: 100%;
 }
@@ -127,5 +137,6 @@
 
 .movie-h2 {
   background-color: #4cc9f0;
-  font-family: "Road Rage", cursive;
+  font-family: 'Road Rage', cursive;
 }
+/*# sourceMappingURL=style.css.map */
