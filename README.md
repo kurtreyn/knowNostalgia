@@ -12,7 +12,7 @@
 
 Site created with Bootstrap 4, custom SCSS, and custom vanilla JavaScript.
 
-Build made with Gulp
+Created build with Gulp.
 
 - Know(Nostalgia) was created for a portfolio project for Nucamp coding bootcamp.
 - The site has multiple pages which are responsive, as well as featuring buttons which, when pressed, display trivia about the given item.
