@@ -12,8 +12,10 @@ $colorSix: #4cc9f0;
 
 .custom-nav {
   background-color: $primaryColor;
-  a {
-    color: $colorFour;
+  .navbar-nav {
+    .nav-link {
+      color: #fff;
+    }
   }
 }
 
@@ -48,9 +50,14 @@ $colorSix: #4cc9f0;
   width: 8rem;
 }
 
+#loginButton {
+  color: $colorFour;
+}
+
 .custom-footer {
   background-color: $primaryColor;
 }
+
 .footer-logo {
   width: 8rem;
   padding: 0.5rem;
