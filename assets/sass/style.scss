@@ -12,8 +12,10 @@ $colorSix: #4cc9f0;
 
 .custom-nav {
   background-color: $primaryColor;
-  a {
-    color: $colorFour;
+  .navbar-nav {
+    .nav-link {
+      color: #fff;
+    }
   }
 }
 
