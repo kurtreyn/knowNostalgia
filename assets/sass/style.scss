@@ -12,6 +12,10 @@ $colorSix: #4cc9f0;
 
 .custom-nav {
   background-color: $primaryColor;
+  #loginButton {
+    color: $colorFour;
+    font-size: 1.5rem;
+  }
   .navbar-nav {
     .nav-link {
       color: #fff;
@@ -48,10 +52,6 @@ $colorSix: #4cc9f0;
 .btn-fun-fact-page {
   background-color: $funFactBtn;
   width: 8rem;
-}
-
-#loginButton {
-  color: $colorFour;
 }
 
 .custom-footer {
@@ -141,4 +141,34 @@ $colorSix: #4cc9f0;
   background-color: $colorSix;
   font-family: 'Road Rage', cursive;
   // font-size: 2rem;
+}
+
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #272727;
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 15px 10px 0;
+      margin-top: auto;
+    }
+  }
 }

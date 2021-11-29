@@ -5,6 +5,10 @@
 .custom-nav {
   background-color: #f72585;
 }
+.custom-nav #loginButton {
+  color: #4361ee;
+  font-size: 1.5rem;
+}
 .custom-nav .navbar-nav .nav-link {
   color: #fff;
 }
@@ -38,10 +42,6 @@
 .btn-fun-fact-page {
   background-color: #4895ef;
   width: 8rem;
-}
-
-#loginButton {
-  color: #4361ee;
 }
 
 .custom-footer {
@@ -125,4 +125,32 @@
 .movie-h2 {
   background-color: #4cc9f0;
   font-family: "Road Rage", cursive;
+}
+
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movies li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #272727;
+}
+.movies li img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.movies li h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 15px 10px 0;
+  margin-top: auto;
 }
