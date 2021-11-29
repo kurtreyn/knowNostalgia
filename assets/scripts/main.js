@@ -194,6 +194,5 @@ const pageSetup = function () {
 };
 
 for (const fb of factPageBtns) {
-  console.log(`fb is ${fb}`);
   fb.addEventListener('click', pageSetup);
 }
