@@ -5,7 +5,6 @@
 .custom-nav {
   background-color: #f72585;
 }
-
 .custom-nav .navbar-nav .nav-link {
   color: #fff;
 }
@@ -200,3 +199,4 @@
 
 .hide-search-list {
   display: none;
+}
