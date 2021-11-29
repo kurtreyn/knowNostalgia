@@ -172,3 +172,62 @@ $colorSix: #4cc9f0;
     }
   }
 }
+
+.search-row {
+  margin-top: 2rem;
+  border-top: $colorFour solid 2px;
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.search-list {
+  // background-color: $colorSix;
+  margin-top: 2rem;
+  display: flex;
+
+  .search-item-thumbnail {
+    img {
+      max-width: 100%;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.result-grid {
+  // background-color: $colorFour;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+  .movie-poster {
+    display: flex;
+    justify-content: flex-start;
+    img {
+      max-width: 100%;
+      border: 1px solid black;
+    }
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+
+    h3 {
+      font-size: 2rem;
+      font-family: 'Road Rage', cursive;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.hide-search-list {
+  display: none;
+}

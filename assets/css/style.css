@@ -154,3 +154,53 @@
   padding: 15px 10px 0;
   margin-top: auto;
 }
+
+.search-row {
+  margin-top: 2rem;
+  border-top: #4361ee solid 2px;
+}
+.search-row h2 {
+  font-size: 1.5rem;
+}
+
+.search-list {
+  margin-top: 2rem;
+  display: flex;
+}
+.search-list .search-item-thumbnail img {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+.result-grid {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.result-grid .movie-poster {
+  display: flex;
+  justify-content: flex-start;
+}
+.result-grid .movie-poster img {
+  max-width: 100%;
+  border: 1px solid black;
+}
+.result-grid .movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.result-grid .movie-info h3 {
+  font-size: 2rem;
+  font-family: "Road Rage", cursive;
+}
+.result-grid .movie-info li {
+  list-style: none;
+}
+
+.hide-search-list {
+  display: none;
+}
