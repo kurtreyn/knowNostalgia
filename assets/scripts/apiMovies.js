@@ -4,11 +4,12 @@
 const movieSearchBox = document.querySelector('#movie-title');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
+// const movYear = Search[0].Year;
 
 async function loadMovies(searchTitle) {
   const url = `https://omdbapi.com/?s=${searchTitle}&page=1&apikey=99e6a288`;
-  const result = await fetch(`${url}`);
-  const data = await result.json();
+  const searchRes = await fetch(`${url}`);
+  const data = await searchRes.json();
   // if (data.Response === 'True') console.log(data.Search);
   if (data.Response === 'True') displayMovieList(data.Search);
 }
@@ -30,6 +31,8 @@ function displayMovieList(movies) {
     let movieListItem = document.createElement('div');
     // console.log(movieListItem);
     movieListItem.dataset.id = movies[idx].imdbID;
+    let movieYear = movies[idx].Year;
+    // console.log(movieYear);
     movieListItem.classList.add('search-list-item');
     if (movies[idx].Poster != 'N/A') {
       moviePoster = movies[idx].Poster;
@@ -56,10 +59,10 @@ function loadMovieDetails() {
       // console.log(movie.dataset.id);
       searchList.classList.add('hide-search-list');
       movieSearchBox.value = '';
-      const result = await fetch(
+      const resDetails = await fetch(
         `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=99e6a288`
       );
-      const movieDetails = await result.json();
+      const movieDetails = await resDetails.json();
       // console.log(movieDetails);
       displayMovieDetails(movieDetails);
     });
