@@ -172,3 +172,33 @@ $colorSix: #4cc9f0;
     }
   }
 }
+
+// Temp borrow style
+.search-item-thumbnail img {
+  width: 30%;
+  margin-right: 1rem;
+}
+.search-item-info h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.search-item-info p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.movie-poster img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.movie-info {
+  text-align: center;
+
+  padding-top: 3rem;
+}
+
+.hide-search-list {
+  display: none;
+}
