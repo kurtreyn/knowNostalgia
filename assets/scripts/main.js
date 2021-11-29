@@ -1,12 +1,11 @@
 'use strict';
 
-//INDEX SCRIPT
+// INDEX SCRIPT
 const factBtns = document.querySelectorAll('[data-fact]');
 const containers = document.querySelectorAll('.fact-container');
 const closeBtn = document.querySelectorAll('.close-button');
 let currentBtn = '';
 let currentCont = '';
-let thisLocation = '';
 let para = document.createElement('p');
 let attrib = '';
 
@@ -34,15 +33,15 @@ const facts = {
 
 const setup = function () {
   currentBtn = this.getAttribute('data-fact');
-  console.log(this);
+  // console.log(this);
 
   for (let i = 0; i < containers.length; i++) {
     currentCont = containers[i].getAttribute('id');
-    console.log(`current cont is ${currentCont}`);
+    // console.log(`current cont is ${currentCont}`);
 
     if (currentCont === currentBtn) {
       attrib = currentCont;
-      console.log(`attrib is ${attrib}`);
+      // console.log(`attrib is ${attrib}`);
       if (attrib === 'semi-charmed') {
         console.log(`attrib is now: ${attrib}`);
         para.innerText = facts.semiCharmed;
@@ -85,19 +84,19 @@ for (const btn of factBtns) {
   btn.addEventListener('click', setup);
 }
 
-//page start
+// page start
 const factCont = document.querySelectorAll('[data-container]');
 const factPageBtns = document.querySelectorAll('[data-fact-button]');
 let curFB = '';
 let curCont = '';
 
-const testClick = function () {
-  console.log(`test click`);
-};
+// const testClick = function () {
+//   console.log(`test click`);
+// };
 
 const pageSetup = function () {
   curFB = this.getAttribute('data-fact-button');
-  console.log(`current button is ${curFB}`);
+  // console.log(`current button is ${curFB}`);
 
   for (let y = 0; y < factCont.length; y++) {
     // console.log(factCont[y]);
@@ -108,8 +107,8 @@ const pageSetup = function () {
     let initBtnTxt = factPageBtns[y].innerText;
 
     if (curCont === curFB) {
-      console.log(`current container is: ${curCont}`);
-      console.log(`it's a match`);
+      // console.log(`current container is: ${curCont}`);
+      // console.log(`it's a match`);
       // console.log(factCont[y]);
 
       function delta() {
@@ -126,7 +125,7 @@ const pageSetup = function () {
         factPageBtns[y].innerText = initBtnTxt;
         curFB = '';
         curCont = '';
-        console.log(`curFB is now ${curFB} curCont is now ${curCont}`);
+        // console.log(`curFB is now ${curFB} curCont is now ${curCont}`);
       };
 
       switch (curCont) {
