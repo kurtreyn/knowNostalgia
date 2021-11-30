@@ -1,46 +1,3 @@
-const searchBox = document.querySelector('#movie-title');
-
-// function searchForMovie(query) {
-//   const url = `https://api.themoviedb.org/3/search/company?api_key=9f58a494561e5c01787e32650fb8409c&query=${query}`;
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((jsonData) => {
-//       console.log(jsonData);
-//     });
-// }
-// searchForMovie('Predator');
-
-// const findAMovie = function () {
-//   let searchTitle = searchBox.value.trim();
-//   console.log(searchTitle);
-// };
-
-function findMovie(movSearch) {
-  fetch(
-    `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/${movSearch}`,
-    {
-      method: 'GET',
-      headers: {
-        'x-rapidapi-host':
-          'imdb-internet-movie-database-unofficial.p.rapidapi.com',
-        'x-rapidapi-key': '68d03c46femshddc6ba1d9d8adabp112c10jsn1ca43f37d1a1',
-      },
-    }
-  )
-    .then((response) => {
-      console.log(response.json());
-    })
-    .catch((err) => {
-      console.error(err);
-    });
-}
-
-findMovie('Predator');
-
-searchBox.addEventListener('keyup', findMovie);
-
-/*
-
 // Titles: https://omdbapi.com/?s=thor&page=1&apikey=99e6a288
 // details: https://www.omdbapi.com/?i=tt3896198&apikey=99e6a288
 
@@ -146,6 +103,3 @@ function displayMovieDetails(details) {
 }
 
 movieSearchBox.addEventListener('keyup', findMovies);
-
-
-  */
