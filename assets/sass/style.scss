@@ -185,7 +185,7 @@ $colorSix: #4cc9f0;
 
   .search-item-thumbnail {
     img {
-      max-width: 100%;
+      max-width: 6rem;
       padding: 0.5rem;
     }
   }
@@ -199,10 +199,9 @@ $colorSix: #4cc9f0;
   align-content: flex-start;
 
   .movie-poster {
-    display: flex;
-    justify-content: flex-start;
+    display: block;
     img {
-      max-width: 100%;
+      max-width: 10rem;
       border: 1px solid black;
     }
   }

@@ -1,3 +1,33 @@
+/*
+const searchBox = document.querySelector('#movie-title');
+
+const findAMovie = function () {
+  let searchTitle = searchBox.value.trim();
+  console.log(searchTitle);
+};
+
+searchBox.addEventListener('keyup', findAMovie);
+
+fetch(
+  `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/${findAMovie}`,
+  {
+    method: 'GET',
+    headers: {
+      'x-rapidapi-host':
+        'imdb-internet-movie-database-unofficial.p.rapidapi.com',
+      'x-rapidapi-key': '68d03c46femshddc6ba1d9d8adabp112c10jsn1ca43f37d1a1',
+    },
+  }
+)
+  .then((response) => {
+    console.log(response.json());
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+  */
+
 // Titles: https://omdbapi.com/?s=thor&page=1&apikey=99e6a288
 // details: https://www.omdbapi.com/?i=tt3896198&apikey=99e6a288
 
@@ -31,22 +61,25 @@ function displayMovieList(movies) {
     let movieListItem = document.createElement('div');
     // console.log(movieListItem);
     movieListItem.dataset.id = movies[idx].imdbID;
-    let movieYear = movies[idx].Year;
-    // console.log(movieYear);
+
     movieListItem.classList.add('search-list-item');
     if (movies[idx].Poster != 'N/A') {
       moviePoster = movies[idx].Poster;
     } else {
       moviePoster = '../assets/images/image_not_found.png';
     }
-    movieListItem.innerHTML = `
-    <div class="search-list-item">
-    <div class="search-item-thumbnail">
-      <img src="${moviePoster}" />
+    if (movies[idx].Year >= '1990' && movies[idx].Year <= '2009') {
+      movieListItem.innerHTML = `
+      <div class="search-list-item">
+      <div class="search-item-thumbnail">
+        <img src="${moviePoster}" />
+      </div>
     </div>
-  </div>
-    `;
-    searchList.appendChild(movieListItem);
+      `;
+      searchList.appendChild(movieListItem);
+    } else {
+      movieListItem.innerHTML = `'../assets/images/image_not_found.png'`;
+    }
   }
   loadMovieDetails();
 }
@@ -63,8 +96,14 @@ function loadMovieDetails() {
         `https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=99e6a288`
       );
       const movieDetails = await resDetails.json();
-      // console.log(movieDetails);
-      displayMovieDetails(movieDetails);
+      const movieYear = movieDetails.Year;
+      // console.log(movieYear);
+      if (movieYear >= '1990' && movieYear <= '2009') {
+        displayMovieDetails(movieDetails);
+      } else {
+        resultGrid.innerText = 'Movie was not released between 1990 - 2009';
+      }
+      // displayMovieDetails(movieDetails);
     });
   });
 }
