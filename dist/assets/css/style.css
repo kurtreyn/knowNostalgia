@@ -171,7 +171,7 @@
   display: flex;
 }
 .search-list .search-item-thumbnail img {
-  max-width: 100%;
+  max-width: 6rem;
   padding: 0.5rem;
 }
 
@@ -182,11 +182,10 @@
   align-content: flex-start;
 }
 .result-grid .movie-poster {
-  display: flex;
-  justify-content: flex-start;
+  display: block;
 }
 .result-grid .movie-poster img {
-  max-width: 100%;
+  max-width: 10rem;
   border: 1px solid black;
 }
 .result-grid .movie-info {
