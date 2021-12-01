@@ -7,8 +7,7 @@
     "build": "npm run clean && gulp cssBundle && gulp jsBundle && npm run imagemin && gulp mincss && gulp es && gulp minify",
     "start": "gulp watch",
     "imagemin": "imagemin assets/images/* -o dist/assets/images",
-    "clean": "rimraf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist"
   },
   "author": "Kurt Reynolds",
   "license": "ISC",
