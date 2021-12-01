@@ -38,7 +38,10 @@ function displayMovieList(movies) {
     } else {
       moviePoster = '../assets/images/image_not_found.png';
     }
-    if (movies[idx].Year >= '1990' && movies[idx].Year <= '2009') {
+    let movieYear = movies[idx].Year;
+    let movieType = movies[idx].Type;
+    let movieParam = movieYear >= '1990' && movieYear <= '2009';
+    if (movieYear >= '1990' && movieYear <= '2009' && movieType === 'movie') {
       movieListItem.innerHTML = `
       <div class="search-list-item">
       <div class="search-item-thumbnail">
