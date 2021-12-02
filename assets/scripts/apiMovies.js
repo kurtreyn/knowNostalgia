@@ -40,7 +40,6 @@ function displayMovieList(movies) {
     }
     let movieYear = movies[idx].Year;
     let movieType = movies[idx].Type;
-    let movieParam = movieYear >= '1990' && movieYear <= '2009';
     if (movieYear >= '1990' && movieYear <= '2009' && movieType === 'movie') {
       movieListItem.innerHTML = `
       <div class="search-list-item">
