@@ -1,9 +1,11 @@
+'use strict';
 // Titles: https://omdbapi.com/?s=thor&page=1&apikey=99e6a288
 // details: https://www.omdbapi.com/?i=tt3896198&apikey=99e6a288
 
 const movieSearchBox = document.querySelector('#movie-title');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
+let moviePoster;
 // const movYear = Search[0].Year;
 
 async function loadMovies(searchTitle) {
@@ -31,7 +33,6 @@ function displayMovieList(movies) {
     let movieListItem = document.createElement('div');
     // console.log(movieListItem);
     movieListItem.dataset.id = movies[idx].imdbID;
-
     movieListItem.classList.add('search-list-item');
     if (movies[idx].Poster != 'N/A') {
       moviePoster = movies[idx].Poster;
@@ -75,7 +76,6 @@ function loadMovieDetails() {
       } else {
         resultGrid.innerText = 'Movie was not released between 1990 - 2009';
       }
-      // displayMovieDetails(movieDetails);
     });
   });
 }
